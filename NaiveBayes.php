@@ -1,7 +1,7 @@
 <?php
 /**
  * PHP Class of Naive Bayes Classifier
- * @source https://github.com/MuhammadSabri1306/...
+ * @source https://github.com/MuhammadSabri1306/NaiveBayes
  * @author Muhammad Sabri <muhammadsabri1306@gmail.com>
  *
  */
