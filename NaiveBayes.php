@@ -319,9 +319,10 @@ class NaiveBayes
 
 	/**
 	 * Get P(C|X) / Result Probability for each Class
+	 * @param ? Integer $decimalDigit
 	 * @return Array
 	 */
-	public function getResultProbabilityOfClassOnCondition(){
+	public function getResultProbabilityOfClassOnCondition($decimalDigit = 20){
 		$result = array();
 		$attribute = array_column($this->attribute, 'name');
 
@@ -334,7 +335,7 @@ class NaiveBayes
 				$result[$class] *= $PXC;
 			}
 			
-			$result[$class] = number_format($result[$class], 20);
+			$result[$class] = number_format($result[$class], $decimalDigit);
 		}
 
 		return $result;
